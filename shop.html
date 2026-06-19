@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Shop | Oud & Earth</title>
+
+  <!-- Bootstrap 5 -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.3.3/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600;700&family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- ===== NAVBAR ===== -->
+  <nav class="navbar navbar-expand-lg fixed-top" id="mainNav">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">Oud &amp; Earth</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navMenu">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link active" href="shop.html">Shop</a></li>
+          <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="blog.html">Blog</a></li>
+          <li class="nav-item"><a class="nav-link" href="gallery.html">Gallery</a></li>
+          <li class="nav-item"><a class="nav-link" href="faq.html">FAQ</a></li>
+          <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+        </ul>
+        <button id="themeToggle" class="btn-theme ms-lg-3 mt-3 mt-lg-0" aria-label="Toggle dark mode">🌙</button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ===== PAGE HEADER ===== -->
+  <header class="page-header">
+    <div class="container text-center">
+      <p class="eyebrow">The Collection</p>
+      <h1 class="page-title">Find Your Signature Scent</h1>
+    </div>
+  </header>
+
+  <!-- ===== SHOP SECTION ===== -->
+  <section class="shop-section">
+    <div class="container">
+
+      <!-- Filter buttons -->
+      <div class="filter-bar text-center mb-5">
+        <button class="filter-btn active" data-filter="all">All</button>
+        <button class="filter-btn" data-filter="men">Men</button>
+        <button class="filter-btn" data-filter="women">Women</button>
+        <button class="filter-btn" data-filter="unisex">Unisex</button>
+      </div>
+
+      <!-- Product grid -->
+      <div class="row g-4" id="productGrid">
+
+        <div class="col-md-4 col-sm-6 product-item" data-category="men">
+          <div class="scent-card">
+            <div class="scent-image scent-1"></div>
+            <h4>Amber Nocturne</h4>
+            <p class="scent-notes">Amber · Black Oud · Cardamom</p>
+            <p class="price">KSh 6,200</p>
+          </div>
+        </div>
+
+        <div class="col-md-4 col-sm-6 product-item" data-category="women">
+          <div class="scent-card">
+            <div class="scent-image scent-2"></div>
+            <h4>Desert Bloom</h4>
+            <p class="scent-notes">Saffron · Rose · Sandalwood</p>
+            <p class="price">KSh 5,800</p>
+          </div>
+        </div>
+
+        <div class="col-md-4 col-sm-6 product-item" data-category="unisex">
+          <div class="scent-card">
+            <div class="scent-image scent-3"></div>
+            <h4>Vetiver &amp; Smoke</h4>
+            <p class="scent-notes">Vetiver · Leather · Frankincense</p>
+            <p class="price">KSh 6,500</p>
+          </div>
+        </div>
+
+        <div class="col-md-4 col-sm-6 product-item" data-category="men">
+          <div class="scent-card">
+            <div class="scent-image scent-4"></div>
+            <h4>Iron &amp; Cedar</h4>
+            <p class="scent-notes">Cedarwood · Black Pepper · Musk</p>
+            <p class="price">KSh 5,900</p>
+          </div>
+        </div>
+
+        <div class="col-md-4 col-sm-6 product-item" data-category="women">
+          <div class="scent-card">
+            <div class="scent-image scent-5"></div>
+            <h4>Jasmine Veil</h4>
+            <p class="scent-notes">Jasmine · White Musk · Vanilla</p>
+            <p class="price">KSh 6,000</p>
+          </div>
+        </div>
+
+        <div class="col-md-4 col-sm-6 product-item" data-category="unisex">
+          <div class="scent-card">
+            <div class="scent-image scent-6"></div>
+            <h4>Wild Frankincense</h4>
+            <p class="scent-notes">Frankincense · Bergamot · Amberwood</p>
+            <p class="price">KSh 6,800</p>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- No results message -->
+      <p id="noResults" class="text-center mt-5" style="display:none;">No fragrances found in this category yet.</p>
+
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="row gy-4">
+        <div class="col-md-4">
+          <h5>Oud &amp; Earth</h5>
+          <p>Luxury fragrances rooted in nature, blended by hand in small batches.</p>
+        </div>
+        <div class="col-md-4">
+          <h5>Quick Links</h5>
+          <ul class="footer-links">
+            <li><a href="shop.html">Shop</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="faq.html">FAQ</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div class="col-md-4">
+          <h5>Get in Touch</h5>
+          <p>hello@oudandearth.com<br>Nairobi, Kenya</p>
+        </div>
+      </div>
+      <hr>
+      <p class="text-center small mb-0">&copy; 2026 Oud &amp; Earth. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.3.3/js/bootstrap.bundle.min.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
