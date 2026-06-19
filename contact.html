@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact Us | Oud & Earth</title>
+
+  <!-- Bootstrap 5 -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.3.3/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600;700&family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- ===== NAVBAR ===== -->
+  <nav class="navbar navbar-expand-lg fixed-top" id="mainNav">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">Oud &amp; Earth</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navMenu">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="shop.html">Shop</a></li>
+          <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="blog.html">Blog</a></li>
+          <li class="nav-item"><a class="nav-link" href="gallery.html">Gallery</a></li>
+          <li class="nav-item"><a class="nav-link" href="faq.html">FAQ</a></li>
+          <li class="nav-item"><a class="nav-link active" href="contact.html">Contact</a></li>
+        </ul>
+        <button id="themeToggle" class="btn-theme ms-lg-3 mt-3 mt-lg-0" aria-label="Toggle dark mode">🌙</button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ===== PAGE HEADER ===== -->
+  <header class="page-header">
+    <div class="container text-center">
+      <p class="eyebrow">We'd Love to Hear From You</p>
+      <h1 class="page-title">Get in Touch</h1>
+    </div>
+  </header>
+
+  <!-- ===== CONTACT SECTION ===== -->
+  <section class="contact-section">
+    <div class="container">
+      <div class="row gy-5">
+
+        <!-- Contact Info -->
+        <div class="col-lg-4">
+          <h3 class="mb-4">Contact Details</h3>
+
+          <div class="contact-info-item">
+            <h5>📍 Visit Us</h5>
+            <p>14 Riverside Drive<br>Nairobi, Kenya</p>
+          </div>
+
+          <div class="contact-info-item">
+            <h5>✉️ Email Us</h5>
+            <p>hello@oudandearth.com</p>
+          </div>
+
+          <div class="contact-info-item">
+            <h5>📞 Call Us</h5>
+            <p>+254 712 345 678</p>
+          </div>
+
+          <div class="contact-info-item">
+            <h5>🕑 Studio Hours</h5>
+            <p>Mon &ndash; Fri: 9am &ndash; 6pm<br>Sat: 10am &ndash; 4pm<br>Sun: Closed</p>
+          </div>
+        </div>
+
+        <!-- Contact Form -->
+        <div class="col-lg-8">
+          <h3 class="mb-4">Send a Message</h3>
+
+          <form id="contactForm" novalidate>
+
+            <div class="row g-3">
+              <div class="col-md-6">
+                <label for="name" class="form-label">Full Name</label>
+                <input type="text" class="form-control" id="name" placeholder="Your name">
+                <div class="error-message" id="nameError"></div>
+              </div>
+
+              <div class="col-md-6">
+                <label for="email" class="form-label">Email Address</label>
+                <input type="email" class="form-control" id="email" placeholder="you@example.com">
+                <div class="error-message" id="emailError"></div>
+              </div>
+
+              <div class="col-md-6">
+                <label for="phone" class="form-label">Phone Number <span class="optional">(optional)</span></label>
+                <input type="tel" class="form-control" id="phone" placeholder="+254 7XX XXX XXX">
+                <div class="error-message" id="phoneError"></div>
+              </div>
+
+              <div class="col-md-6">
+                <label for="subject" class="form-label">Subject</label>
+                <select class="form-select" id="subject">
+                  <option value="" selected disabled>Choose a topic</option>
+                  <option value="order">Order Inquiry</option>
+                  <option value="custom">Custom Blend Request</option>
+                  <option value="wholesale">Wholesale / Stockist</option>
+                  <option value="other">Other</option>
+                </select>
+                <div class="error-message" id="subjectError"></div>
+              </div>
+
+              <div class="col-12">
+                <label for="message" class="form-label">Message</label>
+                <textarea class="form-control" id="message" rows="5" placeholder="Tell us how we can help..."></textarea>
+                <div class="error-message" id="messageError"></div>
+              </div>
+
+              <div class="col-12">
+                <button type="submit" class="btn btn-gold">Send Message</button>
+              </div>
+            </div>
+
+          </form>
+
+          <div id="formSuccess" class="form-success">
+            ✅ Thank you! Your message has been sent. We'll respond within 1–2 business days.
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== MAP PLACEHOLDER ===== -->
+  <section class="map-section">
+    <div class="map-placeholder">
+      <p>📍 14 Riverside Drive, Nairobi, Kenya</p>
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="row gy-4">
+        <div class="col-md-4">
+          <h5>Oud &amp; Earth</h5>
+          <p>Luxury fragrances rooted in nature, blended by hand in small batches.</p>
+        </div>
+        <div class="col-md-4">
+          <h5>Quick Links</h5>
+          <ul class="footer-links">
+            <li><a href="shop.html">Shop</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="faq.html">FAQ</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div class="col-md-4">
+          <h5>Get in Touch</h5>
+          <p>hello@oudandearth.com<br>Nairobi, Kenya</p>
+        </div>
+      </div>
+      <hr>
+      <p class="text-center small mb-0">&copy; 2026 Oud &amp; Earth. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.3.3/js/bootstrap.bundle.min.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
