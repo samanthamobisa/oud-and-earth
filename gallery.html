@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Gallery | Oud & Earth</title>
+
+  <!-- Bootstrap 5 -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.3.3/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600;700&family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- ===== NAVBAR ===== -->
+  <nav class="navbar navbar-expand-lg fixed-top" id="mainNav">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">Oud &amp; Earth</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navMenu">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="shop.html">Shop</a></li>
+          <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="blog.html">Blog</a></li>
+          <li class="nav-item"><a class="nav-link active" href="gallery.html">Gallery</a></li>
+          <li class="nav-item"><a class="nav-link" href="faq.html">FAQ</a></li>
+          <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+        </ul>
+        <button id="themeToggle" class="btn-theme ms-lg-3 mt-3 mt-lg-0" aria-label="Toggle dark mode">🌙</button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ===== PAGE HEADER ===== -->
+  <header class="page-header">
+    <div class="container text-center">
+      <p class="eyebrow">Visual Stories</p>
+      <h1 class="page-title">Gallery</h1>
+    </div>
+  </header>
+
+  <!-- ===== GALLERY GRID ===== -->
+  <section class="gallery-section">
+    <div class="container">
+
+      <div class="gallery-grid">
+        <div class="gallery-item gallery-large" data-img="1" tabindex="0">
+          <div class="gallery-image gallery-img-1"></div>
+          <div class="gallery-caption">Raw oud chips before distillation</div>
+        </div>
+        <div class="gallery-item" data-img="2" tabindex="0">
+          <div class="gallery-image gallery-img-2"></div>
+          <div class="gallery-caption">Hand-blending in the studio</div>
+        </div>
+        <div class="gallery-item" data-img="3" tabindex="0">
+          <div class="gallery-image gallery-img-3"></div>
+          <div class="gallery-caption">Amber resin, sourced from Somalia</div>
+        </div>
+        <div class="gallery-item" data-img="4" tabindex="0">
+          <div class="gallery-image gallery-img-4"></div>
+          <div class="gallery-caption">Aging bottles in the cellar</div>
+        </div>
+        <div class="gallery-item gallery-large" data-img="5" tabindex="0">
+          <div class="gallery-image gallery-img-5"></div>
+          <div class="gallery-caption">Desert Bloom, freshly bottled</div>
+        </div>
+        <div class="gallery-item" data-img="6" tabindex="0">
+          <div class="gallery-image gallery-img-6"></div>
+          <div class="gallery-caption">Vetiver roots, sun-dried</div>
+        </div>
+        <div class="gallery-item" data-img="7" tabindex="0">
+          <div class="gallery-image gallery-img-1"></div>
+          <div class="gallery-caption">Final quality check before shipping</div>
+        </div>
+        <div class="gallery-item" data-img="8" tabindex="0">
+          <div class="gallery-image gallery-img-3"></div>
+          <div class="gallery-caption">Wrapped and ready for delivery</div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ===== LIGHTBOX ===== -->
+  <div id="lightbox" class="lightbox">
+    <button id="lightboxClose" class="lightbox-close" aria-label="Close gallery viewer">&times;</button>
+    <div id="lightboxImage" class="lightbox-image"></div>
+    <p id="lightboxCaption" class="lightbox-caption"></p>
+  </div>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="row gy-4">
+        <div class="col-md-4">
+          <h5>Oud &amp; Earth</h5>
+          <p>Luxury fragrances rooted in nature, blended by hand in small batches.</p>
+        </div>
+        <div class="col-md-4">
+          <h5>Quick Links</h5>
+          <ul class="footer-links">
+            <li><a href="shop.html">Shop</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="faq.html">FAQ</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div class="col-md-4">
+          <h5>Get in Touch</h5>
+          <p>hello@oudandearth.com<br>Nairobi, Kenya</p>
+        </div>
+      </div>
+      <hr>
+      <p class="text-center small mb-0">&copy; 2026 Oud &amp; Earth. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.3.3/js/bootstrap.bundle.min.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
