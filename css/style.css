@@ -768,6 +768,115 @@ body.dark-mode .blog-card p {
   color: #B8A992;
 }
 
+/* ===== GALLERY PAGE ===== */
+.gallery-section {
+  padding: 5rem 0;
+}
+ 
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1.2rem;
+}
+ 
+.gallery-item {
+  position: relative;
+  border-radius: 4px;
+  overflow: hidden;
+  cursor: pointer;
+}
+ 
+.gallery-large {
+  grid-column: span 2;
+  grid-row: span 2;
+}
+ 
+.gallery-image {
+  width: 100%;
+  height: 220px;
+  background-size: cover;
+  background-position: center;
+  transition: transform 0.4s ease;
+}
+ 
+.gallery-large .gallery-image {
+  height: 100%;
+}
+ 
+.gallery-item:hover .gallery-image {
+  transform: scale(1.06);
+}
+ 
+.gallery-img-1 { background: linear-gradient(150deg, #2C1A0E, #6B3F1F); }
+.gallery-img-2 { background: linear-gradient(150deg, #A85C32, #C9A84C); }
+.gallery-img-3 { background: linear-gradient(150deg, #6B3F1F, #3A2416); }
+.gallery-img-4 { background: linear-gradient(150deg, #C9A84C, #6B3F1F); }
+.gallery-img-5 { background: linear-gradient(150deg, #2C1A0E, #A85C32); }
+.gallery-img-6 { background: linear-gradient(150deg, #3A2416, #C9A84C); }
+ 
+.gallery-caption {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 0.8rem 1rem;
+  background: linear-gradient(to top, rgba(0,0,0,0.65), transparent);
+  color: #FAF6F0;
+  font-size: 0.85rem;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+ 
+.gallery-item:hover .gallery-caption,
+.gallery-item:focus .gallery-caption {
+  opacity: 1;
+}
+ 
+/* Lightbox */
+.lightbox {
+  display: none;
+  position: fixed;
+  inset: 0;
+  background: rgba(20, 12, 7, 0.92);
+  z-index: 1050;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 2rem;
+}
+ 
+.lightbox.open {
+  display: flex;
+}
+ 
+.lightbox-image {
+  width: 100%;
+  max-width: 700px;
+  height: 60vh;
+  border-radius: 4px;
+  background-size: cover;
+  background-position: center;
+}
+ 
+.lightbox-caption {
+  color: #FAF6F0;
+  margin-top: 1rem;
+  font-size: 1rem;
+}
+ 
+.lightbox-close {
+  position: absolute;
+  top: 2rem;
+  right: 2rem;
+  background: none;
+  border: none;
+  color: #FAF6F0;
+  font-size: 2.2rem;
+  line-height: 1;
+  cursor: pointer;
+}
+
+
 /* ===== RESPONSIVE ===== */
 @media (max-width: 768px) {
   .hero-title {
