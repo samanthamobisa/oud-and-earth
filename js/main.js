@@ -118,9 +118,7 @@ document.addEventListener('DOMContentLoaded', function () {
   }
 });
 
-// ============================
-// OUD & EARTH — MAIN JS
-// ============================
+
 
 // ===== DARK / LIGHT MODE TOGGLE =====
 document.addEventListener('DOMContentLoaded', function () {
@@ -245,5 +243,53 @@ document.addEventListener('DOMContentLoaded', function () {
 
       noResults.style.display = visibleCount === 0 ? 'block' : 'none';
     });
+  });
+});
+
+// ===== GALLERY LIGHTBOX =====
+document.addEventListener('DOMContentLoaded', function () {
+  const galleryItems = document.querySelectorAll('.gallery-item');
+  const lightbox = document.getElementById('lightbox');
+  const lightboxImage = document.getElementById('lightboxImage');
+  const lightboxCaption = document.getElementById('lightboxCaption');
+  const lightboxClose = document.getElementById('lightboxClose');
+ 
+  if (galleryItems.length === 0) return; // Only run this on the gallery page
+ 
+  function openLightbox(item) {
+    const imageEl = item.querySelector('.gallery-image');
+    const caption = item.querySelector('.gallery-caption').textContent;
+ 
+    // Copy the same background gradient class onto the lightbox image
+    lightboxImage.className = 'lightbox-image';
+    imageEl.classList.forEach(cls => {
+      if (cls.startsWith('gallery-img-')) {
+        lightboxImage.classList.add(cls);
+      }
+    });
+ 
+    lightboxCaption.textContent = caption;
+    lightbox.classList.add('open');
+    document.body.style.overflow = 'hidden';
+  }
+ 
+  function closeLightbox() {
+    lightbox.classList.remove('open');
+    document.body.style.overflow = '';
+  }
+ 
+  galleryItems.forEach(item => {
+    item.addEventListener('click', () => openLightbox(item));
+    item.addEventListener('keypress', (e) => {
+      if (e.key === 'Enter') openLightbox(item);
+    });
+  });
+ 
+  lightboxClose.addEventListener('click', closeLightbox);
+  lightbox.addEventListener('click', function (e) {
+    if (e.target === lightbox) closeLightbox();
+  });
+  document.addEventListener('keydown', function (e) {
+    if (e.key === 'Escape') closeLightbox();
   });
 });
