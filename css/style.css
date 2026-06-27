@@ -200,9 +200,9 @@ a {
   background-position: center;
 }
 
-.scent-1 { background: linear-gradient(160deg, #3A2416, #6B3F1F); }
-.scent-2 { background: linear-gradient(160deg, #6B3F1F, #C9A84C); }
-.scent-3 { background: linear-gradient(160deg, #2C1A0E, #5A4A3A); }
+.scent-1 { background-image: url('../assets/images/amber-nocturne.png');background-size: cover; background-position: center; }
+.scent-2 { background-image: url('../assets/images/desert-bloom.png');background-size: cover; background-position: center; }
+.scent-3 { background-image: url('../assets/images/vetiver-smoke.png');background-size: cover; background-position: center; }
 
 .scent-card h4 {
   font-size: 1.3rem;
@@ -565,9 +565,9 @@ body.dark-mode .form-select {
   color: #FAF6F0;
 }
 
-.scent-4 { background: linear-gradient(160deg, #2C1A0E, #A85C32); }
-.scent-5 { background: linear-gradient(160deg, #C9A84C, #6B3F1F); }
-.scent-6 { background: linear-gradient(160deg, #A85C32, #2C1A0E); }
+.scent-4 { background-image: url('../assets/images/iron-cedar.png'); background-size: cover; background-position: center; }
+.scent-5 { background-image: url('../assets/images/jasmine-veil.png'); background-size: cover; background-position: center; }
+.scent-6 { background-image: url('../assets/images/wild-frankincense.png'); background-size: cover; background-position: center; }
 
 #noResults {
   color: #7A6A5A;
@@ -615,6 +615,7 @@ body.dark-mode .filter-btn.active {
   border-radius: 4px;
   background-size: cover;
   background-position: center;
+  background-image: url('../assets/images/amber-nocturne.png');
 }
 
 .product-title {
@@ -876,6 +877,109 @@ body.dark-mode .blog-card p {
   cursor: pointer;
 }
 
+
+/* ===== FAQ PAGE ===== */
+.faq-section {
+  padding: 5rem 0;
+}
+ 
+.faq-section .eyebrow {
+  margin-top: 1rem;
+  margin-bottom: 0.8rem;
+}
+ 
+.accordion-item {
+  border: none;
+  border-bottom: 1px solid #E2D5C0;
+  background-color: transparent;
+}
+ 
+.accordion-button {
+  font-family: var(--font-display);
+  font-size: 1.05rem;
+  color: var(--color-dark);
+  background-color: transparent;
+  padding: 1.2rem 0;
+  box-shadow: none;
+}
+ 
+.accordion-button:not(.collapsed) {
+  color: var(--color-terracotta);
+  background-color: transparent;
+  box-shadow: none;
+}
+ 
+.accordion-button:focus {
+  box-shadow: none;
+  border-color: transparent;
+}
+ 
+.accordion-button::after {
+  background-size: 1.1rem;
+}
+ 
+.accordion-body {
+  padding: 0 0 1.5rem 0;
+  font-size: 0.96rem;
+  line-height: 1.7;
+  color: #5A4A3A;
+}
+ 
+.faq-cta {
+  background-color: #F0E8DA;
+  padding: 3rem 2rem;
+  border-radius: 4px;
+  margin-top: 2rem;
+}
+ 
+.faq-cta p {
+  color: #5A4A3A;
+  margin-bottom: 1.5rem;
+}
+ 
+body.dark-mode .accordion-item {
+  border-bottom-color: #4A3A2A;
+}
+ 
+body.dark-mode .accordion-button {
+  color: #F4ECE0;
+}
+ 
+body.dark-mode .accordion-button:not(.collapsed) {
+  color: var(--color-gold);
+}
+ 
+body.dark-mode .accordion-body {
+  color: #B8A992;
+}
+ 
+body.dark-mode .faq-cta {
+  background-color: #271A10;
+}
+ 
+body.dark-mode .faq-cta p {
+  color: #B8A992;
+}
+ 
+/* ===== RESPONSIVE ===== */
+@media (max-width: 768px) {
+  .hero-title {
+    font-size: 2.2rem;
+  }
+  .featured, .story {
+    padding: 3.5rem 0;
+  }
+  .story-image {
+    height: 260px;
+  }
+  .gallery-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .gallery-large {
+    grid-column: span 2;
+    grid-row: span 1;
+  }
+}
 
 /* ===== RESPONSIVE ===== */
 @media (max-width: 768px) {
