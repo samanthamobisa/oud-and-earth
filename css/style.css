@@ -707,12 +707,12 @@ body.dark-mode .related-section {
   border-radius: 4px;
 }
  
-.blog-image-1 { background: linear-gradient(150deg, #6B3F1F, #C9A84C); }
-.blog-image-2 { background: linear-gradient(150deg, #2C1A0E, #A85C32); }
-.blog-image-3 { background: linear-gradient(150deg, #A85C32, #6B3F1F); }
-.blog-image-4 { background: linear-gradient(150deg, #C9A84C, #2C1A0E); }
-.blog-image-5 { background: linear-gradient(150deg, #3A2416, #A85C32); }
-.blog-image-6 { background: linear-gradient(150deg, #6B3F1F, #2C1A0E); }
+.blog-image-1 { background-image: url('../assets/images/blog-featured.jpg'); background-size: cover; background-position: center; }
+.blog-image-2 { background-image: url('../assets/images/blog-2.jpg'); background-size: cover; background-position: center; }
+.blog-image-3 { background-image: url('../assets/images/blog-3.jpg'); background-size: cover; background-position: center; }
+.blog-image-4 { background-image: url('../assets/images/blog-4.jpg'); background-size: cover; background-position: center; }
+.blog-image-5 { background-image: url('../assets/images/blog-5.jpg'); background-size: cover; background-position: center; }
+.blog-image-6 { background-image: url('../assets/images/blog-6.jpg'); background-size: cover; background-position: center; }
  
 .blog-grid-section {
   background-color: #F0E8DA;
