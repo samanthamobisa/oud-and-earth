@@ -235,7 +235,9 @@ a {
 .story-image {
   height: 380px;
   border-radius: 4px;
-  background: linear-gradient(135deg, #4A2E18, #C9A84C);
+  background-image: url('../assets/images/our-story.jpg');
+  background-size: cover;
+  background-position: center;
 }
 
 .link-gold {
