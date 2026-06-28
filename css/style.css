@@ -814,12 +814,12 @@ body.dark-mode .blog-card p {
   transform: scale(1.06);
 }
  
-.gallery-img-1 { background: linear-gradient(150deg, #2C1A0E, #6B3F1F); }
-.gallery-img-2 { background: linear-gradient(150deg, #A85C32, #C9A84C); }
-.gallery-img-3 { background: linear-gradient(150deg, #6B3F1F, #3A2416); }
-.gallery-img-4 { background: linear-gradient(150deg, #C9A84C, #6B3F1F); }
-.gallery-img-5 { background: linear-gradient(150deg, #2C1A0E, #A85C32); }
-.gallery-img-6 { background: linear-gradient(150deg, #3A2416, #C9A84C); }
+.gallery-img-1 { background-image: url('../assets/images/gallery-1.jpg'); background-size: cover; background-position: center; }
+.gallery-img-2 { background-image: url('../assets/images/gallery-2.jpg'); background-size: cover; background-position: center; }
+.gallery-img-3 { background-image: url('../assets/images/gallery-3.jpg'); background-size: cover; background-position: center; }
+.gallery-img-4 { background-image: url('../assets/images/gallery-4.jpg'); background-size: cover; background-position: center; }
+.gallery-img-5 { background-image: url('../assets/images/gallery-5.jpg'); background-size: cover; background-position: center; }
+.gallery-img-6 { background-image: url('../assets/images/gallery-6.jpg'); background-size: cover; background-position: center; }
  
 .gallery-caption {
   position: absolute;
