@@ -102,7 +102,7 @@ oud-and-earth/
 - **Final commit:** 28 June 2026
 - **Target commits:** 34+ with meaningful, incremental messages
 - Commits follow a regular daily schedule reflecting genuine development progress
-
+**Progress update (27 June 2026):** All 8 pages complete with real photography across Home, About, Shop, Product Detail, Blog, and Gallery. All 4 JavaScript features fully functional (dark mode, form validation, product filter, gallery lightbox). 30+ commits completed, on track to exceed the 34-commit minimum well before the 28 June deadline.
 ---
 
 ##  Author
