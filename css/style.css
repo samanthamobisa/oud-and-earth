@@ -353,11 +353,15 @@ body.dark-mode .story p {
 }
 
 .about-image-1 {
-  background: linear-gradient(135deg, #6B3F1F, #C9A84C);
+  background-image: url('../assets/images/about-workshop.jpg');
+  background-size: cover;
+  background-position: center;
 }
 
 .about-image-2 {
-  background: linear-gradient(135deg, #2C1A0E, #A85C32);
+  background-image: url('../assets/images/about-process.jpg');
+  background-size: cover;
+  background-position: center;
 }
 
 .values-section {
